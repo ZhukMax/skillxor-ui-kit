@@ -1,3 +1,39 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+
+a, button, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@mixin no-border {
+    border: 0;
+}
+@mixin border {
+    border-radius: .25rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    border-width: 1px;
+}
+
 /** White */
 $white-color: #fff;
 @mixin white-bg {
@@ -12,6 +48,7 @@ $white-color: #fff;
 
 /** Primary */
 $primary-color: rgb(48 115 241);
+$primary-soft-color: rgba(48, 115, 241, .25);
 @mixin primary-bg {
     background-color: $primary-color;
 }
@@ -24,6 +61,7 @@ $primary-color: rgb(48 115 241);
 
 /** Success */
 $success-color: rgb(28 180 84);
+$success-soft-color: rgba(28, 180, 84, .25);
 @mixin success-bg {
     background-color: $success-color;
 }
@@ -36,6 +74,7 @@ $success-color: rgb(28 180 84);
 
 /** Info */
 $info-color: rgb(8 149 216);
+$info-soft-color: rgba(8, 149, 216, .25);
 @mixin info-bg {
     background-color: $info-color;
 }
@@ -48,6 +87,7 @@ $info-color: rgb(8 149 216);
 
 /** Warning */
 $warning-color: rgb(226 169 7);
+$warning-soft-color: rgba(226, 169, 7, .25);
 @mixin warning-bg {
     background-color: $warning-color;
 }
@@ -60,6 +100,7 @@ $warning-color: rgb(226 169 7);
 
 /** Danger */
 $danger-color: rgb(230 53 53);
+$danger-soft-color: rgba(230, 53, 53, .25);
 @mixin danger-bg {
     background-color: $danger-color;
 }
@@ -72,6 +113,7 @@ $danger-color: rgb(230 53 53);
 
 /** Dark */
 $dark-color: rgb(49 58 70);
+$dark-soft-color: rgba(49, 58, 70, .25);
 @mixin dark-bg {
     background-color: $dark-color;
 }
@@ -84,6 +126,7 @@ $dark-color: rgb(49 58 70);
 
 /** Secondary */
 $secondary-color: rgb(104 98 93);
+$secondary-soft-color: rgba(104, 98, 93, .25);
 @mixin secondary-bg {
     background-color: $secondary-color;
 }
@@ -96,6 +139,7 @@ $secondary-color: rgb(104 98 93);
 
 /** Light */
 $light-color: rgb(238 242 247);
+$light-soft-color: rgba(238, 242, 247, .25);
 @mixin light-bg {
     background-color: $light-color;
 }

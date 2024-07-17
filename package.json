@@ -4,11 +4,10 @@
   "description": "Skillxor UI Kit",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch": "./node_modules/.bin/webpack && npm version patch && npm publish"
   },
   "keywords": [
-    "ui",
-    "ui-kit"
+    "ui", "ui-kit", "react", "components", "react components", "frontend", "ui library"
   ],
   "author": "Max Zhuk <mail@zhukmax.com>",
   "license": "Apache-2.0",

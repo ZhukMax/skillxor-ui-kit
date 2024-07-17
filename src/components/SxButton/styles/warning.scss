@@ -1,0 +1,27 @@
+@import "../../../index";
+
+.sx-warning-btn {
+  @include warning-bg;
+  @include white-text;
+  @include no-border;
+}
+.sx-warning-outline-btn {
+  @include white-bg;
+  @include warning-text;
+  @include warning-border;
+}
+.sx-warning-outline-btn:hover {
+  @include warning-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-warning-soft-btn {
+  background-color: $warning-soft-color;
+  @include warning-text;
+  @include no-border;
+}
+.sx-warning-soft-btn:hover {
+  @include warning-bg;
+  @include white-text;
+  @include no-border;
+}

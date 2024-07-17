@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-secondary-btn {
+  @include secondary-bg;
+  @include white-text;
+}
+.sx-secondary-outline-btn {
+  @include white-bg;
+  @include secondary-text;
+  @include secondary-border;
+}
+.sx-secondary-outline-btn:hover {
+  @include secondary-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-secondary-soft-btn {
+  background-color: $secondary-soft-color;
+  @include secondary-text;
+  @include no-border;
+}
+.sx-secondary-soft-btn:hover {
+  @include secondary-bg;
+  @include white-text;
+  @include no-border;
+}

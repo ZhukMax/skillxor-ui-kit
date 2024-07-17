@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-success-btn {
+  @include success-bg;
+  @include white-text;
+}
+.sx-success-outline-btn {
+  @include white-bg;
+  @include success-text;
+  @include success-border;
+}
+.sx-success-outline-btn:hover {
+  @include success-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-success-soft-btn {
+  background-color: $success-soft-color;
+  @include success-text;
+  @include no-border;
+}
+.sx-success-soft-btn:hover {
+  @include success-bg;
+  @include white-text;
+  @include no-border;
+}

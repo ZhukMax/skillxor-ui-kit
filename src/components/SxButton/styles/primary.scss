@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-primary-btn {
+  @include primary-bg;
+  @include white-text;
+}
+.sx-primary-outline-btn {
+  @include white-bg;
+  @include primary-text;
+  @include primary-border;
+}
+.sx-primary-outline-btn:hover {
+  @include primary-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-primary-soft-btn {
+  background-color: $primary-soft-color;
+  @include primary-text;
+  @include no-border;
+}
+.sx-primary-soft-btn:hover {
+  @include primary-bg;
+  @include white-text;
+  @include no-border;
+}

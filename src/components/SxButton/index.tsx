@@ -1,16 +1,18 @@
 import React, {FC} from 'react';
-import './index.scss';
-import {Props} from "../props";
+import './styles/index.scss';
+import {StyledComponentProps} from "../props";
 
-export interface SxButtonProps extends Props {
-}
+export interface SxButtonProps extends StyledComponentProps {}
 
-const SxButton: FC<SxButtonProps> = ({
-                                       bs,
-                                       xs,
-                                       children,
-                                       ...props
-}) => {
+const SxButton: FC<SxButtonProps> = (sxButtonProps) => {
+  const {
+    bs,
+    xs,
+    className,
+    children,
+    ...props
+  } = sxButtonProps;
+
   const rootClasses = ["sx-btn"];
   if (bs !== undefined) {
     if (xs !== undefined)
@@ -21,8 +23,15 @@ const SxButton: FC<SxButtonProps> = ({
     rootClasses.push("primary-btn");
   }
 
+  if (className !== undefined) {
+    const classes = className.split(" ");
+    classes.forEach(
+      (localClassName) => rootClasses.push(`sx-btn-${localClassName}`)
+    )
+  }
+
   return (
-    <button {...props} className={rootClasses.join(" ")}>
+    <button type="button" className={rootClasses.join(" ")} {...props}>
       {children}
     </button>
   );

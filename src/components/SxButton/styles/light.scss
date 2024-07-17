@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-light-btn {
+  @include light-bg;
+  @include dark-text;
+}
+.sx-light-outline-btn {
+  @include white-bg;
+  @include light-text;
+  @include light-border;
+}
+.sx-light-outline-btn:hover {
+  @include light-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-light-soft-btn {
+  background-color: $light-soft-color;
+  @include light-text;
+  @include no-border;
+}
+.sx-light-soft-btn:hover {
+  @include light-bg;
+  @include white-text;
+  @include no-border;
+}

@@ -1,0 +1,51 @@
+@import "../../../index";
+@import "primary";
+@import "success";
+@import "info";
+@import "warning";
+@import "danger";
+@import "dark";
+@import "secondary";
+@import "light";
+
+.sx-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: .25rem;
+    border-width: 1px;
+    padding: .5rem 1rem;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition-duration: 150ms;
+    transition-duration: 150ms;
+    cursor: pointer;
+}
+
+.sx-btn-rounded {
+    border-radius: 9999px;
+}
+
+.sx-btn-sm {
+    padding: .375rem .875rem;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.sx-btn-lg {
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}

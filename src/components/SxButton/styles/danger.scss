@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-danger-btn {
+  @include danger-bg;
+  @include white-text;
+}
+.sx-danger-outline-btn {
+  @include white-bg;
+  @include danger-text;
+  @include danger-border;
+}
+.sx-danger-outline-btn:hover {
+  @include danger-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-danger-soft-btn {
+  background-color: $danger-soft-color;
+  @include danger-text;
+  @include no-border;
+}
+.sx-danger-soft-btn:hover {
+  @include danger-bg;
+  @include white-text;
+  @include no-border;
+}

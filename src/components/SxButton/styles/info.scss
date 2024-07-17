@@ -1,0 +1,25 @@
+@import "../../../index";
+.sx-info-btn {
+  @include info-bg;
+  @include white-text;
+}
+.sx-info-outline-btn {
+  @include white-bg;
+  @include info-text;
+  @include info-border;
+}
+.sx-info-outline-btn:hover {
+  @include info-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-info-soft-btn {
+  background-color: $info-soft-color;
+  @include info-text;
+  @include no-border;
+}
+.sx-info-soft-btn:hover {
+  @include info-bg;
+  @include white-text;
+  @include no-border;
+}

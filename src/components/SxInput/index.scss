@@ -1,0 +1,13 @@
+@import "../../index";
+
+.sx-input, .sx-input:focus {
+  display: block;
+  width: 100%;
+  @include border;
+  background-color: transparent;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding: .5rem .75rem;
+  --tw-shadow: 0 0 #0000;
+}

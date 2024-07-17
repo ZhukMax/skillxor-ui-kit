@@ -1,0 +1,26 @@
+@import "../../../index";
+
+.sx-dark-btn {
+  @include dark-bg;
+  @include white-text;
+}
+.sx-dark-outline-btn {
+  @include white-bg;
+  @include dark-text;
+  @include dark-border;
+}
+.sx-dark-outline-btn:hover {
+  @include dark-bg;
+  @include white-text;
+  @include white-border;
+}
+.sx-dark-soft-btn {
+  background-color: $dark-soft-color;
+  @include dark-text;
+  @include no-border;
+}
+.sx-dark-soft-btn:hover {
+  @include dark-bg;
+  @include white-text;
+  @include no-border;
+}
