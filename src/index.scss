@@ -1,0 +1,107 @@
+/** White */
+$white-color: #fff;
+@mixin white-bg {
+    background-color: $white-color;
+}
+@mixin white-text {
+    color: $white-color;
+}
+@mixin white-border {
+    border-color: $white-color;
+}
+
+/** Primary */
+$primary-color: rgb(48 115 241);
+@mixin primary-bg {
+    background-color: $primary-color;
+}
+@mixin primary-text {
+    color: $primary-color;
+}
+@mixin primary-border {
+    border-color: $primary-color;
+}
+
+/** Success */
+$success-color: rgb(28 180 84);
+@mixin success-bg {
+    background-color: $success-color;
+}
+@mixin success-text {
+    color: $success-color;
+}
+@mixin success-border {
+    border-color: $success-color;
+}
+
+/** Info */
+$info-color: rgb(8 149 216);
+@mixin info-bg {
+    background-color: $info-color;
+}
+@mixin info-text {
+    color: $info-color;
+}
+@mixin info-border {
+    border-color: $info-color;
+}
+
+/** Warning */
+$warning-color: rgb(226 169 7);
+@mixin warning-bg {
+    background-color: $warning-color;
+}
+@mixin warning-text {
+    color: $warning-color;
+}
+@mixin warning-border {
+    border-color: $warning-color;
+}
+
+/** Danger */
+$danger-color: rgb(230 53 53);
+@mixin danger-bg {
+    background-color: $danger-color;
+}
+@mixin danger-text {
+    color: $danger-color;
+}
+@mixin danger-border {
+    border-color: $danger-color;
+}
+
+/** Dark */
+$dark-color: rgb(49 58 70);
+@mixin dark-bg {
+    background-color: $dark-color;
+}
+@mixin dark-text {
+    color: $dark-color;
+}
+@mixin dark-border {
+    border-color: $dark-color;
+}
+
+/** Secondary */
+$secondary-color: rgb(104 98 93);
+@mixin secondary-bg {
+    background-color: $secondary-color;
+}
+@mixin secondary-text {
+    color: $secondary-color;
+}
+@mixin secondary-border {
+    border-color: $secondary-color;
+}
+
+/** Light */
+$light-color: rgb(238 242 247);
+@mixin light-bg {
+    background-color: $light-color;
+}
+@mixin light-text {
+    color: $light-color;
+}
+@mixin light-border {
+    border-color: $light-color;
+}
