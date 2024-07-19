@@ -1,5 +1,7 @@
 .sass-cache
 node_modules
+.git/
+.idea/
 .gitignore
 .npmignore
 package-lock.json

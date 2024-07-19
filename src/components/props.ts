@@ -6,6 +6,6 @@ export interface BaseProps extends PropsWithChildren {
 }
 
 export interface StyledComponentProps extends BaseProps {
-  bs?: BaseStyles;
-  xs?: AdditionalStyles;
+  mStyle?: BaseStyles;
+  xStyle?: AdditionalStyles;
 }

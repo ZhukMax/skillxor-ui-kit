@@ -1,6 +1,6 @@
-![NPM License](https://img.shields.io/npm/l/skillxor-ui-kit)
+[![NPM License](https://img.shields.io/npm/l/skillxor-ui-kit)](./LICENSE)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/skillxor-ui-kit)
-![NPM Downloads](https://img.shields.io/npm/d18m/skillxor-ui-kit)
+[![NPM Downloads](https://img.shields.io/npm/d18m/skillxor-ui-kit)](https://www.npmjs.com/package/skillxor-ui-kit)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/zhukmax/skillxor-ui-kit)
 
 # Skillxor UI Kit
@@ -20,3 +20,15 @@ yarn add skillxor-ui-kit
 # Using pnpm
 pnpm add skillxor-ui-kit
 ```
+
+## Components
+At this moment published next components:
+- SxButton
+- SxInput
+
+## Future work
+I plan to add more and more components and page templates.
+
+## License
+
+[Apache License 2.0](./LICENSE)
