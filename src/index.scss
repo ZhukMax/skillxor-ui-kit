@@ -33,6 +33,10 @@ a, button, input, select, textarea {
     border-color: rgb(229 231 235 / var(--tw-border-opacity));
     border-width: 1px;
 }
+@mixin text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
 
 /** White */
 $white-color: #fff;

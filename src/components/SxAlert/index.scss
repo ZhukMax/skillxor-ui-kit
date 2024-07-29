@@ -1,0 +1,128 @@
+@import "../../index";
+
+.sx-alert {
+  border-radius: .375rem;
+  padding: 1rem;
+  @include text-sm;
+  box-sizing: border-box;
+}
+.sx-primary-alert {
+  @include white-text;
+  @include primary-bg;
+}
+.sx-primary-outline-alert {
+  background-color: $primary-soft-color;
+  @include primary-text;
+  @include primary-border;
+  border-width: 1px;
+}
+.sx-primary-soft-alert {
+  @include primary-text;
+  background-color: $primary-soft-color;
+  @include no-border;
+}
+.sx-dark-alert {
+  @include white-text;
+  @include dark-bg;
+}
+.sx-dark-outline-alert {
+  background-color: $dark-soft-color;
+  @include dark-text;
+  @include dark-border;
+  border-width: 1px;
+}
+.sx-dark-soft-alert {
+  @include dark-text;
+  background-color: $dark-soft-color;
+  @include no-border;
+}
+.sx-danger-alert {
+  @include white-text;
+  @include danger-bg;
+}
+.sx-danger-outline-alert {
+  background-color: $danger-soft-color;
+  @include danger-text;
+  @include danger-border;
+  border-width: 1px;
+}
+.sx-danger-soft-alert {
+  @include danger-text;
+  background-color: $danger-soft-color;
+  @include no-border;
+}
+.sx-info-alert {
+  @include white-text;
+  @include info-bg;
+}
+.sx-info-outline-alert {
+  background-color: $info-soft-color;
+  @include info-text;
+  @include info-border;
+  border-width: 1px;
+}
+.sx-info-soft-alert {
+  @include info-text;
+  background-color: $info-soft-color;
+  @include no-border;
+}
+.sx-light-alert {
+  @include dark-text;
+  @include light-bg;
+}
+.sx-light-outline-alert {
+  background-color: $light-soft-color;
+  @include dark-text;
+  @include dark-border;
+  border-width: 1px;
+}
+.sx-light-soft-alert {
+  @include dark-text;
+  background-color: $light-soft-color;
+  @include no-border;
+}
+.sx-secondary-alert {
+  @include white-text;
+  @include secondary-bg;
+}
+.sx-secondary-outline-alert {
+  background-color: $secondary-soft-color;
+  @include secondary-text;
+  @include secondary-border;
+  border-width: 1px;
+}
+.sx-secondary-soft-alert {
+  @include secondary-text;
+  background-color: $secondary-soft-color;
+  @include no-border;
+}
+.sx-success-alert {
+  @include white-text;
+  @include success-bg;
+}
+.sx-success-outline-alert {
+  background-color: $success-soft-color;
+  @include success-text;
+  @include success-border;
+  border-width: 1px;
+}
+.sx-success-soft-alert {
+  @include success-text;
+  background-color: $success-soft-color;
+  @include no-border;
+}
+.sx-warning-alert {
+  @include white-text;
+  @include warning-bg;
+}
+.sx-warning-outline-alert {
+  background-color: $warning-soft-color;
+  @include warning-text;
+  @include warning-border;
+  border-width: 1px;
+}
+.sx-warning-soft-alert {
+  @include warning-text;
+  background-color: $warning-soft-color;
+  @include no-border;
+}
