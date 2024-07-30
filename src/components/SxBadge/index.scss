@@ -1,0 +1,27 @@
+@import "../../index";
+
+.sx-badge {
+  font-weight: 500;
+  padding: .375rem .75rem;
+  border-radius: .375rem;
+  gap: .375rem;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: inline-flex;
+}
+.sx-badge.sx-primary-soft {
+  color: $primary-dark-color;
+}
+.sx-badge.sx-success-soft {
+  color: $success-dark-color;
+}
+.sx-badge.sx-warning-soft {
+  color: $warning-dark-color;
+}
+.sx-badge.sx-danger-soft {
+  color: $danger-dark-color;
+}
+.sx-badge.sx-info-soft {
+  color: $info-dark-color;
+}

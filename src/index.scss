@@ -37,6 +37,9 @@ a, button, input, select, textarea {
     font-size: .875rem;
     line-height: 1.25rem;
 }
+.click {
+    cursor: pointer;
+}
 
 /** White */
 $white-color: #fff;
@@ -52,6 +55,7 @@ $white-color: #fff;
 
 /** Primary */
 $primary-color: rgb(48 115 241);
+$primary-dark-color: rgb(22, 59, 129);
 $primary-soft-color: rgba(48, 115, 241, .25);
 @mixin primary-bg {
     background-color: $primary-color;
@@ -62,9 +66,24 @@ $primary-soft-color: rgba(48, 115, 241, .25);
 @mixin primary-border {
     border-color: $primary-color;
 }
+.sx-primary {
+    @include white-text;
+    @include primary-bg;
+}
+.sx-primary-outline {
+    @include primary-text;
+    @include primary-border;
+    border-width: 1px;
+}
+.sx-primary-soft {
+    @include primary-text;
+    background-color: $primary-soft-color;
+    @include no-border;
+}
 
 /** Success */
 $success-color: rgb(28 180 84);
+$success-dark-color: rgb(18, 104, 49);
 $success-soft-color: rgba(28, 180, 84, .25);
 @mixin success-bg {
     background-color: $success-color;
@@ -75,9 +94,24 @@ $success-soft-color: rgba(28, 180, 84, .25);
 @mixin success-border {
     border-color: $success-color;
 }
+.sx-success {
+    @include white-text;
+    @include success-bg;
+}
+.sx-success-outline {
+    @include success-text;
+    @include success-border;
+    border-width: 1px;
+}
+.sx-success-soft {
+    @include success-text;
+    background-color: $success-soft-color;
+    @include no-border;
+}
 
 /** Info */
 $info-color: rgb(8 149 216);
+$info-dark-color: rgb(6, 105, 152);
 $info-soft-color: rgba(8, 149, 216, .25);
 @mixin info-bg {
     background-color: $info-color;
@@ -88,9 +122,24 @@ $info-soft-color: rgba(8, 149, 216, .25);
 @mixin info-border {
     border-color: $info-color;
 }
+.sx-info {
+    @include white-text;
+    @include info-bg;
+}
+.sx-info-outline {
+    @include info-text;
+    @include info-border;
+    border-width: 1px;
+}
+.sx-info-soft {
+    @include info-text;
+    background-color: $info-soft-color;
+    @include no-border;
+}
 
 /** Warning */
 $warning-color: rgb(226 169 7);
+$warning-dark-color: rgb(133 77 14);
 $warning-soft-color: rgba(226, 169, 7, .25);
 @mixin warning-bg {
     background-color: $warning-color;
@@ -101,9 +150,24 @@ $warning-soft-color: rgba(226, 169, 7, .25);
 @mixin warning-border {
     border-color: $warning-color;
 }
+.sx-warning {
+    @include white-text;
+    @include warning-bg;
+}
+.sx-warning-outline {
+    @include warning-text;
+    @include warning-border;
+    border-width: 1px;
+}
+.sx-warning-soft {
+    @include warning-text;
+    background-color: $warning-soft-color;
+    @include no-border;
+}
 
 /** Danger */
 $danger-color: rgb(230 53 53);
+$danger-dark-color: rgb(124, 24, 24);
 $danger-soft-color: rgba(230, 53, 53, .25);
 @mixin danger-bg {
     background-color: $danger-color;
@@ -113,6 +177,20 @@ $danger-soft-color: rgba(230, 53, 53, .25);
 }
 @mixin danger-border {
     border-color: $danger-color;
+}
+.sx-danger {
+    @include white-text;
+    @include danger-bg;
+}
+.sx-danger-outline {
+    @include danger-text;
+    @include danger-border;
+    border-width: 1px;
+}
+.sx-danger-soft {
+    @include danger-text;
+    background-color: $danger-soft-color;
+    @include no-border;
 }
 
 /** Dark */
@@ -127,6 +205,21 @@ $dark-soft-color: rgba(49, 58, 70, .25);
 @mixin dark-border {
     border-color: $dark-color;
 }
+.sx-dark {
+    @include white-text;
+    @include dark-bg;
+}
+.sx-dark-outline {
+    background-color: $dark-soft-color;
+    @include dark-text;
+    @include dark-border;
+    border-width: 1px;
+}
+.sx-dark-soft {
+    @include dark-text;
+    background-color: $dark-soft-color;
+    @include no-border;
+}
 
 /** Secondary */
 $secondary-color: rgb(104 98 93);
@@ -140,10 +233,24 @@ $secondary-soft-color: rgba(104, 98, 93, .25);
 @mixin secondary-border {
     border-color: $secondary-color;
 }
+.sx-secondary {
+    @include white-text;
+    @include secondary-bg;
+}
+.sx-secondary-outline {
+    @include secondary-text;
+    @include secondary-border;
+    border-width: 1px;
+}
+.sx-secondary-soft {
+    @include secondary-text;
+    background-color: $secondary-soft-color;
+    @include no-border;
+}
 
 /** Light */
 $light-color: rgb(238 242 247);
-$light-soft-color: rgba(238, 242, 247, .25);
+$light-soft-color: rgba(238, 242, 247, .5);
 @mixin light-bg {
     background-color: $light-color;
 }
@@ -152,4 +259,19 @@ $light-soft-color: rgba(238, 242, 247, .25);
 }
 @mixin light-border {
     border-color: $light-color;
+}
+.sx-light {
+    @include dark-text;
+    @include light-bg;
+}
+.sx-light-outline {
+    background-color: $light-soft-color;
+    @include dark-text;
+    @include dark-border;
+    border-width: 1px;
+}
+.sx-light-soft {
+    @include dark-text;
+    background-color: $light-soft-color;
+    @include no-border;
 }

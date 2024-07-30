@@ -1,9 +1,9 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import {AdditionalStyles, BaseStyles, SxAlert} from "../index";
+import {AdditionalStyles, BaseStyles, SxBadge} from "../index";
 
-const meta: Meta<typeof SxAlert> = {
-  title: "Components/SxAlert",
-  component: SxAlert,
+const meta: Meta<typeof SxBadge> = {
+  title: "Components/SxBadge",
+  component: SxBadge,
   tags: ["autodocs"],
   argTypes: {
     mStyle: {
@@ -21,73 +21,73 @@ const meta: Meta<typeof SxAlert> = {
 }
 
 export default meta
-type Story = StoryObj<typeof SxAlert>
+type Story = StoryObj<typeof SxBadge>
 
 export const Primary: Story = {
   args: {
-    children: 'Primary alert! You should check in on some of those fields below.',
+    label: 'Primary badge',
   }
 }
 
 export const Soft: Story = {
   args: {
-    children: 'Soft alert! You should check in on some of those fields below.',
+    label: 'Soft badge',
     xStyle: AdditionalStyles.soft
   }
 }
 
 export const Outline: Story = {
   args: {
-    children: 'Outline alert! You should check in on some of those fields below.',
+    label: 'Outline badge',
     xStyle: AdditionalStyles.outline
   }
 }
 
 export const Secondary: Story = {
   args: {
-    children: 'Secondary alert! You should check in on some of those fields below.',
+    label: 'Secondary badge',
     mStyle: BaseStyles.secondary
   }
 }
 
 export const Dark: Story = {
   args: {
-    children: 'Dark alert! You should check in on some of those fields below.',
+    label: 'Dark badge',
     mStyle: BaseStyles.dark
   }
 }
 
 export const Danger: Story = {
   args: {
-    children: 'Danger alert! You should check in on some of those fields below.',
+    label: 'Danger badge',
     mStyle: BaseStyles.danger
   }
 }
 
 export const Info: Story = {
   args: {
-    children: 'Info alert! You should check in on some of those fields below.',
+    label: 'Info badge',
     mStyle: BaseStyles.info
   }
 }
 
 export const Light: Story = {
   args: {
-    children: 'Light alert! You should check in on some of those fields below.',
+    label: 'Light badge',
     mStyle: BaseStyles.light
   }
 }
 
 export const Success: Story = {
   args: {
-    children: 'Success alert! You should check in on some of those fields below.',
+    label: 'Success badge',
     mStyle: BaseStyles.success
   }
 }
 
 export const Warning: Story = {
   args: {
-    children: 'Warning alert! You should check in on some of those fields below.',
+    label: 'Warning badge',
     mStyle: BaseStyles.warning
   }
 }

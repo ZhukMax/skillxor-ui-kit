@@ -21,6 +21,7 @@
   background-color: $primary-soft-color;
   @include no-border;
 }
+
 .sx-dark-alert {
   @include white-text;
   @include dark-bg;

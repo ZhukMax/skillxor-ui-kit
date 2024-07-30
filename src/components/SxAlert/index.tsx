@@ -36,4 +36,4 @@ const SxAlert: FC<SxAlertProps> = (sxAlertProps) => {
     </div>
   )
 }
-export default SxAlert;
+export default SxAlert
