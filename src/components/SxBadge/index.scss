@@ -1,10 +1,12 @@
 @import "../../index";
 
 .sx-badge {
+  font-size: .75rem;
   font-weight: 500;
   padding: .375rem .75rem;
   border-radius: .375rem;
   gap: .375rem;
+  line-height: 1rem;
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -24,4 +26,50 @@
 }
 .sx-badge.sx-info-soft {
   color: $info-dark-color;
+}
+.sx-badge-indicator {
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 9999px;
+  width: .375rem;
+  height: .375rem;
+}
+.sx-primary-soft .sx-badge-indicator,
+.sx-primary-outline .sx-badge-indicator {
+  background-color: $primary-color;
+  opacity: .6;
+}
+.sx-success-soft .sx-badge-indicator,
+.sx-success-outline .sx-badge-indicator {
+  background-color: $success-color;
+  opacity: .6;
+}
+.sx-info-soft .sx-badge-indicator,
+.sx-info-outline .sx-badge-indicator {
+  background-color: $info-color;
+  opacity: .6;
+}
+.sx-warning-soft .sx-badge-indicator,
+.sx-warning-outline .sx-badge-indicator {
+  background-color: $warning-color;
+  opacity: .6;
+}
+.sx-danger-soft .sx-badge-indicator,
+.sx-danger-outline .sx-badge-indicator {
+  background-color: $danger-color;
+  opacity: .6;
+}
+.sx-dark-soft .sx-badge-indicator,
+.sx-dark-outline .sx-badge-indicator {
+  background-color: $dark-color;
+  opacity: .6;
+}
+.sx-secondary-soft .sx-badge-indicator,
+.sx-secondary-outline .sx-badge-indicator {
+  background-color: $secondary-color;
+  opacity: .6;
+}
+.sx-light-soft .sx-badge-indicator,
+.sx-light-outline .sx-badge-indicator {
+  background-color: $dark-color;
+  opacity: .4;
 }

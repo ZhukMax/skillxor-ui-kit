@@ -23,6 +23,9 @@
 a, button, input, select, textarea {
     -webkit-tap-highlight-color: transparent;
 }
+.rounded {
+    border-radius: 9999px !important;
+}
 
 @mixin no-border {
     border: 0;

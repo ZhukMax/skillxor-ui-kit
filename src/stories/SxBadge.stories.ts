@@ -43,6 +43,28 @@ export const Outline: Story = {
   }
 }
 
+export const Rounded: Story = {
+  args: {
+    label: 'Rounded',
+    rounded: true
+  }
+}
+
+export const Indicator: Story = {
+  args: {
+    label: 'With Indicator',
+    indicator: true
+  }
+}
+
+export const RoundedSoft: Story = {
+  args: {
+    label: 'Rounded Soft badge',
+    rounded: true,
+    xStyle: AdditionalStyles.soft
+  }
+}
+
 export const Secondary: Story = {
   args: {
     label: 'Secondary badge',
